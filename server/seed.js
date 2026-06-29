@@ -35,7 +35,7 @@ const seedUsers = async () => {
     });
     console.log('Worker user created successfully:', worker.email);
 
-    console.log('Database Seeding Completed Successfully! 🚀');
+    console.log('Database Seeding Completed Successfully!');
     process.exit(0);
   } catch (err) {
     console.error('Error during seeding:', err);
