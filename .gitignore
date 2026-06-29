@@ -1,0 +1,73 @@
+# Project-specific ignores
+PRD/
+
+# Dependency directories
+**/node_modules/
+
+# Sensitive credential and configuration files
+**/*.env*
+!**/*.env.example
+**/*.pem
+**/*.key
+**/*.cert
+**/*.p12
+**/credentials.json
+**/secrets.json
+**/serviceAccountKey.json
+**/google-services.json
+**/firebase-adminsdk*.json
+**/GoogleService-Info.plist
+
+# Production/build outputs
+**/dist/
+**/build/
+**/coverage/
+**/.nyc_output/
+
+# Log files and rotated system logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+**/firebase-debug.log*
+**/*.log
+**/*.log.*
+**/error_log
+**/access_log
+**/error.log
+**/access.log
+**/logs/
+**/.logs/
+**/.pm2/
+**/pm2.log
+
+# Database dumps (contains sensitive production data)
+**/*.sql
+**/*.dump
+**/*.rdb
+**/*.sqlite
+
+# Core dumps and system fallback files
+**/core.*
+**/*.orig
+**/*.rej
+**/*.bak
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
